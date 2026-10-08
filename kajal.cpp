@@ -1,57 +1,26 @@
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int a[100];
-
-//     int n;
-//     int pos;
-//     int value;
-
-// cout<<"enter size:";
-// cin >>n;
-// cout << "enter elements:";
-// for(int i=0;i<n;i++)
-//     cin >>a[i];
-//     cout<<"enter position and value:";
-//     cin >> pos>>value;
-//     for(int i=n;i>=pos;i++)
-//         a[i]=a[i-1];
-
-//         a[pos-1]=value;
-//         n++;
-//         cout<<"array after insertion :";
-//         for(int i=0;i<n;i++)
-//         cout<<a[i]<< " ";
-
-
-
-
-//     return 0;
-
-
-// }
-
-
-// Delete element from array
+// linear Search and Binary Search
 #include<iostream>
 using namespace std;
 int main(){
     int a[100];
-    int n;
-    int pos;
-    int value;
+    int n,key;
     cout<<"enter size:";
+
+
     cin>>n;
     for(int i=0;i<n;i++)
     cin>>a[i];
-    cout<<"enter position:";
-    cin>>pos;
-    for(int i=pos-1;i<n;i++)
-    a[i]=a[i-1];
-    n--;
-    cout<<"array after deletion :";
-    for(int i=0;i<n;i++)
-    cout<<a[i]<< " ";
-    return 0;
+    cout<<"enter element:";
+    cin >>key;
+    for(int i =0;i<n;i++){
+    if(a[i]==key ){
+        cout<<"element found at position"
+         <<i+1;
+
+         return 0;
+
+    }
 
 }
+cout<<"element not found ";
+return 0;}
